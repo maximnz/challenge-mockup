@@ -1,0 +1,96 @@
+/* line 6, scss/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 10, scss/style.scss */
+.container-fluid {
+  overflow: hidden; }
+
+/* line 14, scss/style.scss */
+body {
+  font-family: 'Work Sans', Arial, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #565656; }
+
+/* line 20, scss/style.scss */
+.main-nav {
+  margin: 35px 55px; }
+  /* line 23, scss/style.scss */
+  .main-nav .main-logo {
+    display: block;
+    width: 85px; }
+  /* line 28, scss/style.scss */
+  .main-nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    text-transform: uppercase; }
+    /* line 36, scss/style.scss */
+    .main-nav .nav-list .nav-about {
+      position: relative; }
+      /* line 39, scss/style.scss */
+      .main-nav .nav-list .nav-about::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: calc(50% - 2px);
+        right: 10px;
+        border-style: solid;
+        border-width: 4px 3.5px 0 3.5px;
+        border-color: #ffd942 transparent transparent transparent; }
+    /* line 54, scss/style.scss */
+    .main-nav .nav-list li {
+      width: 100%;
+      text-align: center; }
+      /* line 58, scss/style.scss */
+      .main-nav .nav-list li a {
+        text-decoration: none;
+        color: #565656; }
+        /* line 62, scss/style.scss */
+        .main-nav .nav-list li a:active, .main-nav .nav-list li a:hover, .main-nav .nav-list li a:visited {
+          color: #565656; }
+  /* line 71, scss/style.scss */
+  .main-nav .main-search-button {
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 20px;
+    width: 100%;
+    height: 100%; }
+    /* line 79, scss/style.scss */
+    .main-nav .main-search-button::before {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 1px;
+      background-color: #e8e8e8;
+      position: absolute;
+      top: calc(50% - 15px); }
+
+/* line 91, scss/style.scss */
+.main-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #193e5f;
+  width: 100%;
+  height: 370px;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-image: url("../img/slider/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  /* line 107, scss/style.scss */
+  .main-slider-wrapper .main-slider-header {
+    font-size: 72px; }
+  /* line 111, scss/style.scss */
+  .main-slider-wrapper .main-slider-subheader {
+    font-size: 16px;
+    margin-bottom: 5px; }
